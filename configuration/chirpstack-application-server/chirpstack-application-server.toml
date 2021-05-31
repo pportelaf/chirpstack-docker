@@ -13,6 +13,14 @@ server="tcp://mosquitto:1883"
 [application_server.api]
 public_host="chirpstack-application-server:8001"
 
-[application_server.external_api]
-bind="0.0.0.0:8080"
+ca_cert="/etc/chirpstack-application-server/ssl/ca.crt"
+
+# http server TLS certificate (optional)
+tls_cert="/etc/chirpstack-application-server/ssl/server.crt"
+
+# http server TLS key (optional)
+tls_key="/etc/chirpstack-application-server/ssl/server.key"
+
+# JWT secret used for api authentication / authorization
+# You could generate this by executing 'openssl rand -base64 32' for example
 jwt_secret="verysecret"

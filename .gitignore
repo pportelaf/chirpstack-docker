@@ -5,3 +5,10 @@
 # data folder
 /data
 
+configuration/eclipse-mosquitto/ssl/ca.crt
+configuration/eclipse-mosquitto/ssl/server.crt
+configuration/eclipse-mosquitto/ssl/server.key
+
+configuration/chirpstack-application-server/ssl/ca.crt
+configuration/chirpstack-application-server/ssl/server.crt
+configuration/chirpstack-application-server/ssl/server.key
